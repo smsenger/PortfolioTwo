@@ -1,0 +1,47 @@
+* {
+  font-family: 'MuseoModerno', cursive;
+}
+
+.App-header {
+  border-bottom: 1px solid red;
+  text-align: center;
+}
+
+.App {
+  width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  margin: 20px auto;
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-label {
+  padding-right: 10px;
+}
+
+.form-input {
+  display: block;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #777;
+  padding: 4px 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.form-button {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;display: block;
+  border: 0;
+  background: #777;
+  color: white;
+  padding: 4px 10px;
+}

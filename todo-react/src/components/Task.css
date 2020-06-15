@@ -1,0 +1,30 @@
+.Task {
+    display: flex;
+    background-color: #eee;
+    padding: 6px;
+    margin-bottom: 2px;
+  }
+  
+  .Task__name {
+    flex: 1;
+  }
+  
+  .Task__name.is-complete {
+    text-decoration: line-through;
+  }
+  
+  .Task__button {
+    height: 20px;
+    font-family: serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    padding: 0;
+    margin-left: 4px;
+    border: 0;
+    background: 0;
+  }
+  
+  .Task__button span {
+    line-height: 24px;
+  }

@@ -1,0 +1,33 @@
+* {
+    font-family: 'MuseoModerno', cursive;
+  }
+  
+button {
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    border: 1px solid red;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid red;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 100px;
+    color: red;
+}
+
+#checkbox {
+    border: 1px solid red;
+}
+
+label {
+    color: red;
+}
+
+.complete {
+    margin-top: 10px;
+}

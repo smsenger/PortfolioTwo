@@ -16,7 +16,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     .clear {clear: both;}
     
 .backlink {
-    color: black
+    color: rgb(179, 178, 178);
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
     p {
@@ -34,11 +35,12 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     }
     
     .mainDetails {
-        padding: 25px 35px;
+        padding: 55px 15px 55px 15px;
         border-bottom: 2px solid #03302a;
         background: #ededed;
     }
     
+
     #name h1 {
         font-size: 2.5em;
         font-weight: 700;
