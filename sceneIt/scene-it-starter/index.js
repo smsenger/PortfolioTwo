@@ -43,27 +43,24 @@ function removeFromWatchListSearch(imdbID) {
     localStorage.setItem('watchlist', watchlistJSON);
 }
 
-//Renders the button text differently if movie on watchlist
-// function renderButton() {
-//     const movie = movieData.find((currentMovie) => {
-//         return currentMovie.imdbID == imdbID;
-//     });
-//     let watchlistJSON = localStorage.getItem("watchlist");
-//     let watchlist = JSON.parse(watchlistJSON);
-//     let watchlistMovie = watchlist.find(currentMovie => currentMovie.imdbID == imdbID)
-//     if (watchlistMovie) {
-//         $(`#${imdbID}`).text('Remove Movie');
-//     } 
-// } renderButton();
 
 
-    //execute after doc loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        function renderMovies(movieArray) {
-            //take in array of movies
-            //return string of HTML like that in step 1
-            let movieHtmlArray = movieArray.map(function (currentMovie) {
-                return `<div class="card m-3" style="width:12rem">
+//execute after doc loaded
+document.addEventListener("DOMContentLoaded", function () {
+    //Renders the button text differently if movie on watchlist
+    // function renderButton() {
+    //     let watchlistJSON = localStorage.getItem("watchlist");
+    //     let watchlist = JSON.parse(watchlistJSON);
+    //     let watchlistMovie = watchlist.find(currentMovie => currentMovie.imdbID == imdbID)
+    //     if (watchlistMovie) {
+    //         $('#imdbID').text('Remove Movie');
+    //     }
+    // }
+    function renderMovies(movieArray) {
+        //take in array of movies
+        //return string of HTML like that in step 1
+        let movieHtmlArray = movieArray.map(function (currentMovie) {
+            return `<div class="card m-3" style="width:12rem">
             <img class="card-img-top" id="poster" src="${currentMovie.Poster}"/>
             <div class="card-body">
             <div class="card-title d-flex justify-content-between">
@@ -75,18 +72,18 @@ function removeFromWatchListSearch(imdbID) {
             </div>
             </div>
             </div>`
-            })
-            return movieHtmlArray.join(``);
-        }
-        const myForm = document.getElementById("search-form");
-        myForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            let searchString = $(".search-bar").val();
-            let urlEncodedSearchString = encodeURIComponent(searchString);
-            axios.get("https://www.omdbapi.com/?apikey=b43843a0&s=" + urlEncodedSearchString).then(function (response) {
-                movie.innerHTML = renderMovies(response.data.Search);
-                movieData = response.data.Search;
-                return movieData;
-            });
+        })
+        return movieHtmlArray.join(``);
+    }
+    const myForm = document.getElementById("search-form");
+    myForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let searchString = $(".search-bar").val();
+        let urlEncodedSearchString = encodeURIComponent(searchString);
+        axios.get("https://www.omdbapi.com/?apikey=b43843a0&s=" + urlEncodedSearchString).then(function (response) {
+            movie.innerHTML = renderMovies(response.data.Search);
+            movieData = response.data.Search;
+            return movieData;
         });
     });
+});
