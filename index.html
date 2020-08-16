@@ -1,15 +1,16 @@
 <!DOCTYPE HTML>
+<html lang="en">
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
 
 <head>
-	<title>Saesha Mary Senger</title>
+	<title>About Me | Saesha Mary Senger</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="About me and contact form" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -71,17 +72,18 @@
 
 				</header>
 
-				<div class="image main"><img src="images/codemusic.PNG" alt="" /></div>
+				<div class="image main"><img src="images/codemusic.PNG" alt="Two skills combined: code and music" />
+				</div>
 				<p>After earning a PhD in Musicology and Ethnomusicology,
 					I chose to pursue a career in software development to put my work ethic, resourcefulness, and
-					attention to detail
-					to good use. In my work as a full stack developer in the Atlanta metropolitan area, I bring
-					dedication and commitment to my endeavors. My experience
-					with Python, JavaScript, Node.js, React, HTML, CSS, and GitHub, among other technologies, allows me
-					to utilize broad
-					resources to successfully complete projects. With interests in both front-end and back-end
-					development and
-					the ability to work independently or with a team, I welcome the challenge to make any product all it
+					attention to detail to good use. In my work as a full stack developer in the Atlanta metropolitan
+					area, I bring
+					dedication and commitment to my endeavors. My experience with Python, JavaScript, Node.js, React,
+					HTML, CSS, and GitHub, among other technologies, allows me
+					to utilize broad resources to successfully complete projects. With interests in both front-end and
+					back-end
+					development and the ability to work independently or with a team, I welcome the challenge to make
+					any product all it
 					can be.</p>
 			</section>
 
@@ -91,19 +93,25 @@
 		<footer id="footer">
 			<section>
 				<h2>Contact me</h2>
-				<form method="post" action="#">
+				<form method="POST" name="contact" data-netlify="true">
 					<div class="fields">
 						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<label for="name">Name (Required)</label>
+							<input type="text" name="name" id="name" required
+								oninvalid="this.setCustomValidity('Please enter your name')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 						<div class="field">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+							<label for="email">Email (Required)</label>
+							<input type="email" name="email" id="email" required
+								oninvalid="this.setCustomValidity('Please enter your email')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
+							<label for="message">Message (Required)</label>
+							<textarea name="message" id="message" rows="3" required
+								oninvalid="this.setCustomValidity('Please enter a message')"
+								oninput="this.setCustomValidity('')"></textarea>
 						</div>
 					</div>
 					<ul class="actions">
@@ -136,7 +144,7 @@
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul>
-				<li>&copy; Untitled</li>
+				<li>&copy; Saesha Mary Senger, 2020</li>
 				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</div>

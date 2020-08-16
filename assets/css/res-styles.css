@@ -20,6 +20,14 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
+.links {
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
     p {
         font-size: 1em;
         line-height: 1.4em;
@@ -160,6 +168,11 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     
     .keySkills ul li {
         margin-bottom: 3px;
+    }
+
+    .copyright {
+        text-align: center;
+        list-style: none;
     }
     
     @media all and (min-width: 602px) and (max-width: 800px) {
