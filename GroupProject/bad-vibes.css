@@ -9,6 +9,8 @@ html {
 
 .bodyBadVibes {
   background-color: rgb(1, 1, 1);
+  background-image: url("https://media.giphy.com/media/3o7aCQTyoPLEVwVtZK/giphy.gif");
+  background-size: 100%;
 }
 
 /* container formatting */
@@ -118,7 +120,7 @@ html {
 #linkToGoodVibes2 {
   font-weight: bold;
   color: white;
-  background-image: url("https://media.giphy.com/media/6wpHEQNjkd74Q/giphy.gif");
+  background-image: url("https://media.giphy.com/media/3o7aCQTyoPLEVwVtZK/giphy.gif");
   border-radius: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
